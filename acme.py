@@ -3,8 +3,7 @@
 Classes representing products sold by Acme Corp
 """
 
-import numpy as np
-
+import random
 
 class Product:
     """
@@ -23,7 +22,7 @@ class Product:
         self.price = price
         self.weight = weight
         self.flammability = flammability
-        self.identifier = np.random.randint(1000000, 10000000)
+        self.identifier = random.randint(1000000, 9999999)
 
     def stealability(self):
         """"
